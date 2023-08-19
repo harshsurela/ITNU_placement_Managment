@@ -2,9 +2,10 @@
 include "includes/header.php";
 $set_value = 1;
 $error = '0';
+
     if(isset($_REQUEST['name'])) {
         
-        echo "<script>alert('hello Brother');</script>";
+    
         $id = trim($_SESSION['id']);
         $name = trim($_REQUEST['name']);
         $email = trim($_REQUEST['email']);
@@ -45,6 +46,7 @@ $error = '0';
                    SET user_name='$name', user_email ='$email' 
                    WHERE user_id='$id'";
 
+        
         $result1 = "UPDATE profile
                    SET mobile='$mobile', dob ='$dob', gender = '$gender',
                        ssc_marks = $ssc_marks, hsc_marks = $hsc_marks,
@@ -56,9 +58,10 @@ $error = '0';
         if (mysqli_query($con, $result)) {
             $_SESSION['name'] = $name;
             $_SESSION['email'] = $email;
+            
             if (mysqli_query($con, $result1)) {
-                echo "<script>alert('Success!');</script>";
-                header("Location: profile.php");
+                echo "<script>alert('Profile Updated Successfully!');</script>";
+                // header("Location: profile.php");
             }else
                 echo "<script>alert('". $result." ".mysqli_error($con) ."');</script>";
             //header("Location: login.php");
@@ -66,7 +69,7 @@ $error = '0';
             echo "<script>alert('Errors are encountered!');</script>";
         }
     }
-if(!(isset($_SESSION['name'])&&isset($_SESSION['email'])))
+if(!(isset($_SESSION['name']) && isset($_SESSION['email'])))
     header("Location: login.php");
 else {
     $id = trim($_SESSION['id']);
@@ -168,10 +171,10 @@ else {
                         <p><?php echo $email; ?></p>
                         <br>
                         <div class="col-md-6">
-                            <h4><a href="resume_uploads/<?php echo $resume; ?>" target="_blank"><u><i class="glyphicon glyphicon-file"></i>View Resume</u></a></h4>
+                            <h4><a href="<?php echo $resume; ?>" target="_blank"><u><i class="glyphicon glyphicon-file"></i>View Resume</u></a></h4>
                         </div>
                         <div class="col-md-6">
-                            <form method="post" action="resume_upload.php" enctype='multipart/form-data'>
+                            <form method="POST" action="resume_upload.php" enctype='multipart/form-data'>
                                 <p>New Upload
                                     <input type="file" name="resume" accept="application/pdf" class="btn-primary" id="fileToUpload">
                                     <input type="submit" value="Upload Resume" name="submit" class="btn-info">
@@ -184,12 +187,12 @@ else {
         </div>
         <div class="clearfix"></div>
     </div>
-    <div class="col-md-12 main" style="padding-top: 20px;">
+ <div class="col-md-12 main" style="padding-top: 20px;">
         <div class="col-md-1">
         </div>
         <div class="col-md-8"">
         <h4>Personal Detail</h4>
-        <style>
+    <style>
             table {
                 border-collapse: collapse;
                 width: 100%;
@@ -265,15 +268,11 @@ else {
                 0 1px 1px hsla(0,0%,100%,.8),
                 0 0 2px 2px hsla(0,70%,70%,.4);
             }
-        </style>
-        <form method="post" action="edit_profile.php">
+     </style>
+        <form method="POST" action="edit_profile.php">
         
         <table border="3px" width="100%">
-        <?php 
-        
-        echo $_REQUEST["name"] ;
-        
-        ?>
+       
             <tr>
                 <th>Name</th>
                 <td><input type="text" name="name" value="<?php echo $name; ?>"></td>

@@ -9,17 +9,10 @@
                 <div class="about-content">
                     <!-- about -->
                     <h3 class="tittle">About <i class="glyphicon glyphicon-user"></i></h3>
-                    <img src="image_uploads/logo.png" alt="" />
-                    <p>Having hands on experience in creating innovative designs, I do offer design
-                        solutions which harness the new possibilities of web based communication.
-                        <label>I do specialize in all aspects of website designing,Nam libero tempore,aspects of website designing cum soluta nobis est eligendi  theme development,
-                            possimus omnis dolor repellendus.Nam libero tempore, cum soluta nobis est eligendi  voluptatum...</label></p>
+                    <div><img src="image_uploads/logo.png" alt="" /></div>
+                
                     <div class="clearfix"></div>
-                    <p class="nam">Nam libero tempore, cum soluta nobis est eligendi
-                        optio cumque nihil impedit quo minus id quod maxime placeat facere
-                        possimus, omnis voluptas assumenda est, omnis dolor repellendus.
-                        Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus
-                        saepe eveniet ut et voluptates repudiandae sint Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt labore dolore magna  et molestiae non recusandae.</p>
+                    <p class="nam">Nirma University, located in Ahmedabad, India, is a renowned institution recognized for its excellence in education, research, and innovation. Established with a vision to provide quality education across various disciplines, Nirma University has emerged as a hub of academic and intellectual growth. The university offers a diverse range of undergraduate, postgraduate, and doctoral programs, spanning fields such as engineering, management, law, pharmacy, science, and more. With state-of-the-art facilities, a dedicated faculty, and a dynamic learning environment, Nirma University fosters holistic development among its students. The institution's emphasis on research and innovation encourages students and faculty to explore cutting-edge ideas and contribute to advancements in their respective fields. Nirma University's commitment to fostering academic excellence, nurturing talent, and promoting ethical values has earned it a well-deserved reputation as a premier educational institution both nationally and internationally.</p>
 
                 </div>
                 <!--div class="top-inner second">

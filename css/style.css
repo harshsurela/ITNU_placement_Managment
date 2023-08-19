@@ -1,9 +1,4 @@
-/*--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
---*/
+
 html, body{
 font-family: 'Open Sans', sans-serif;
  font-size: 100%;
@@ -683,11 +678,7 @@ p.nam {
 .more a:hover {
    background-color: #f26649;
 }
-.about-content img {
-	float: left;
-	    width: 50%;
-    margin-right: 3%;
-}
+
 .about-content {
     margin-bottom: 6em;
 }
@@ -2991,11 +2982,7 @@ ul.bottom i {
 	.b-search {
 		padding: 0.4em 0;
 	}
-	.about-content img {
-		float: left;
-		width: 100%;
-		margin-right: 0%;
-	}
+
 	.about-content {
 		margin-bottom: 3em;
 	}

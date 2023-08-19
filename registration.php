@@ -27,6 +27,7 @@ $error = '0';
         } else{
             $set_value = 1;
             $error = "Database Error Could not able to execute". $result." ".mysqli_error($con);
+            echo "<script>alert('".$error."')</script>";
         }
     }
 ?>

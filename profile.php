@@ -215,7 +215,7 @@ else {
             $url = $row['company_url'];
             echo '
                             <div class="editor-pics">
-                                <div class="col-md-10 item-details" style="border: #14bcd5 solid 1px; padding: 10px">
+                                <div class="col-md-10 mb-5 item-details" style="border: #14bcd5 solid 1px; padding: 10px;margin-bottom:5%;">
                                     <h4 class="inner two"><a href="view_company.php?id='.$id.'">'.$name.'</a>
                                     </h4>
                                     <h5>&nbspBranch: '.$branch.'&nbsp&nbsp&nbsp
@@ -228,7 +228,7 @@ else {
         }
         ?>
     </div>
-    <div class="col-md-1"></div>
+    <div class="col-md-1 mt-5"></div>
     </div>
     </div>
     <!-- //login-page -->
